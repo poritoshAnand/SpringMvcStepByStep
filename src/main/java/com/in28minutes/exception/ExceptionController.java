@@ -16,6 +16,7 @@ public class ExceptionController {
 	public String handleException(HttpServletRequest request, Exception ex) {
 		logger.error("Request " + request.getRequestURL()
 				+ " Threw an Exception", ex);
+		System.out.println("error");//by anand
 		return "error";
 	}
 
